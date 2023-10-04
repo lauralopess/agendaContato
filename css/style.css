@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Lato', sons-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+.agenda {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagem {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 2px;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+.contato {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.imgIco {
+    font-size: 28px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.comboBox {
+    width: 50%;
+    padding-left: 14px;
+
+
+}
+
+.nome,
+.sobrenome {
+    margin-left: 5px;
+}
+
+.btnSalvarCancelar {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 14.5px;
+
+
+}
+
+.btnCancelar,
+.btnSalvar {
+    width: 80px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 0px;
+    background: #1154e4;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+
+.salvar {
+    padding: 10px;
+
+}
+
+.cancelar {
+    padding: 10px;
+
+}
+
+.lista {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comboBox select {
+    padding: 7px;
+
+
+}

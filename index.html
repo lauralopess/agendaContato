@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Agenda de contatos</title>
+</head>
+
+<body>
+
+    <header>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        </style>
+
+        <h1>Criar contato</h1>
+
+    </header>
+
+    <div class="imagem">
+        <img src="img/perfil.png">
+    </div>
+
+
+    <div class="agenda">
+
+        <form>
+
+
+            <div class="container">
+
+                <div class="imgIco">
+                    <i class="fa-regular fa-user" style="color: #1154e4;"></i>
+                </div>
+
+                <div class="contato nome">
+                    <input type="text" id="idNome" placeholder="Nome" required name="nome">
+                    
+                </div>
+
+            </div>
+
+
+            <div class="container">
+
+                <div class="imgIco">
+                    <i class="fa-regular fa-building" style="color: #1154e4;"></i>
+                </div>
+
+                <div class="contato sobrenome">
+                    <input type="text" id="idSobrenome" placeholder="Sobrenome" name="nome" />
+                    
+                </div>
+
+            </div>
+
+
+            <div class="container">
+
+                <div class="imgIco">
+                    <i class="fa-solid fa-phone" style="color: #1154e4;"></i>
+                </div>
+
+                <div class="contato numero">
+                    <input type="tel" id="idTel" placeholder="Telefone" required name="telefone" />
+                </div>
+
+            </div>
+
+
+            <div class="container">
+
+                <div class="comboBox">
+
+                    <select name="Marcador">
+                        <option value="celular">Celular</option>
+                        <option value="fixo">Casa</option>
+                        <option value="fixo">Trabalho</option>
+                        <option value="fax">Fax</option>
+                    </select>
+                    
+                </div>
+
+            </div>
+
+
+            <div class="container">
+
+                <div class="imgIco">
+                    <i class="fa-regular fa-envelope" style="color: #1154e4;"></i>
+                </div>
+
+                <div class="contato email">
+                    <input type="email" id="idEmail" placeholder="E-mail">
+                </div>
+            </div>
+
+
+
+
+
+            <div class="btnSalvarCancelar">
+
+                <div class="cancelar">
+                    <input type="submit" value="Cancelar" class="btnCancelar">
+
+                </div>
+
+
+                <div class="salvar">
+                    <input type="submit" value="Salvar" class="btnSalvar">
+                </div>
+
+        </form>
+
+    </div>
+
+    <div class="lista">
+        <input type="text" placeholder="Pesquisar">
+        <ul>
+
+        </ul>
+    </div>
+
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/979769342e.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        const formulario = document.querySelector("form");
+        const ulContatos = document.querySelector("ul");
+
+        formulario.addEventListener("submit", function (e) {
+            e.preventDefault();
+            console.log(this);
+            let novaPessoa = new Object();
+            novaPessoa.nome = this.telefone.value;
+            console.log(novaPessoa);
+        })
+ 
+
+    </script>
+
+
+</body>
+
+</html>
